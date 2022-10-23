@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		E56794442904EF81006A1A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794432904EF81006A1A77 /* AppDelegate.swift */; };
 		E56794462904EF81006A1A77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794452904EF81006A1A77 /* SceneDelegate.swift */; };
-		E56794482904EF81006A1A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794472904EF81006A1A77 /* ViewController.swift */; };
 		E567944B2904EF81006A1A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56794492904EF81006A1A77 /* Main.storyboard */; };
 		E567944D2904EF84006A1A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E567944C2904EF84006A1A77 /* Assets.xcassets */; };
 		E56794502904EF84006A1A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E567944E2904EF84006A1A77 /* LaunchScreen.storyboard */; };
+		E567945F2904F24D006A1A77 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E567945E2904F24D006A1A77 /* Alamofire */; };
+		E56794622904F2D6006A1A77 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E56794612904F2D6006A1A77 /* SDWebImage */; };
+		E56794642904F777006A1A77 /* PlanetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794632904F777006A1A77 /* PlanetVC.swift */; };
+		E56794662904F9CB006A1A77 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794652904F9CA006A1A77 /* MainNavController.swift */; };
+		E56794692904FB1A006A1A77 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794682904FB1A006A1A77 /* UIViewExtensions.swift */; };
+		E567946F2904FED1006A1A77 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567946E2904FED1006A1A77 /* BaseService.swift */; };
+		E56794712904FEEA006A1A77 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794702904FEEA006A1A77 /* APIErrors.swift */; };
+		E56794732904FF7B006A1A77 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794722904FF7B006A1A77 /* Planet.swift */; };
+		E5679475290500EB006A1A77 /* PlanetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679474290500EB006A1A77 /* PlanetAPI.swift */; };
+		E5679477290508F6006A1A77 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679476290508F6006A1A77 /* PlanetViewModel.swift */; };
+		E567947929050EAB006A1A77 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947829050EAB006A1A77 /* Helper.swift */; };
+		E567947B29050F9F006A1A77 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947A29050F9F006A1A77 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E56794402904EF81006A1A77 /* Star-Wars-Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star-Wars-Planets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56794432904EF81006A1A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E56794452904EF81006A1A77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E56794472904EF81006A1A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E567944A2904EF81006A1A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E567944C2904EF84006A1A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E567944F2904EF84006A1A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E56794512904EF84006A1A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56794632904F777006A1A77 /* PlanetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetVC.swift; sourceTree = "<group>"; };
+		E56794652904F9CA006A1A77 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
+		E56794682904FB1A006A1A77 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		E567946E2904FED1006A1A77 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		E56794702904FEEA006A1A77 /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		E56794722904FF7B006A1A77 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		E5679474290500EB006A1A77 /* PlanetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetAPI.swift; sourceTree = "<group>"; };
+		E5679476290508F6006A1A77 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
+		E567947829050EAB006A1A77 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E567947A29050F9F006A1A77 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56794622904F2D6006A1A77 /* SDWebImage in Frameworks */,
+				E567945F2904F24D006A1A77 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +78,8 @@
 		E56794422904EF81006A1A77 /* Star-Wars-Planets */ = {
 			isa = PBXGroup;
 			children = (
+				E567946C2904FE6F006A1A77 /* APIServices */,
+				E56794672904FAE7006A1A77 /* Extensions */,
 				E567945C2904F16B006A1A77 /* View */,
 				E567945B2904F15D006A1A77 /* ViewModel */,
 				E567945A2904F154006A1A77 /* Model */,
@@ -89,6 +113,7 @@
 			children = (
 				E567944C2904EF84006A1A77 /* Assets.xcassets */,
 				E56794512904EF84006A1A77 /* Info.plist */,
+				E567947A29050F9F006A1A77 /* Constant.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -96,6 +121,7 @@
 		E567945A2904F154006A1A77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E56794722904FF7B006A1A77 /* Planet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +129,7 @@
 		E567945B2904F15D006A1A77 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E5679476290508F6006A1A77 /* PlanetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -110,9 +137,37 @@
 		E567945C2904F16B006A1A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E56794472904EF81006A1A77 /* ViewController.swift */,
+				E56794632904F777006A1A77 /* PlanetVC.swift */,
+				E56794652904F9CA006A1A77 /* MainNavController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E56794672904FAE7006A1A77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E56794682904FB1A006A1A77 /* UIViewExtensions.swift */,
+				E567947829050EAB006A1A77 /* Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E567946C2904FE6F006A1A77 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				E567946D2904FEBD006A1A77 /* ServicesHandler */,
+				E5679474290500EB006A1A77 /* PlanetAPI.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		E567946D2904FEBD006A1A77 /* ServicesHandler */ = {
+			isa = PBXGroup;
+			children = (
+				E567946E2904FED1006A1A77 /* BaseService.swift */,
+				E56794702904FEEA006A1A77 /* APIErrors.swift */,
+			);
+			path = ServicesHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +186,10 @@
 			dependencies = (
 			);
 			name = "Star-Wars-Planets";
+			packageProductDependencies = (
+				E567945E2904F24D006A1A77 /* Alamofire */,
+				E56794612904F2D6006A1A77 /* SDWebImage */,
+			);
 			productName = "Star-Wars-Planets";
 			productReference = E56794402904EF81006A1A77 /* Star-Wars-Planets.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +218,10 @@
 				Base,
 			);
 			mainGroup = E56794372904EF81006A1A77;
+			packageReferences = (
+				E567945D2904F24D006A1A77 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E56794602904F2D6006A1A77 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = E56794412904EF81006A1A77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,9 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E56794482904EF81006A1A77 /* ViewController.swift in Sources */,
+				E567947929050EAB006A1A77 /* Helper.swift in Sources */,
+				E56794662904F9CB006A1A77 /* MainNavController.swift in Sources */,
+				E56794712904FEEA006A1A77 /* APIErrors.swift in Sources */,
+				E56794692904FB1A006A1A77 /* UIViewExtensions.swift in Sources */,
+				E5679475290500EB006A1A77 /* PlanetAPI.swift in Sources */,
+				E56794732904FF7B006A1A77 /* Planet.swift in Sources */,
+				E567946F2904FED1006A1A77 /* BaseService.swift in Sources */,
+				E5679477290508F6006A1A77 /* PlanetViewModel.swift in Sources */,
 				E56794442904EF81006A1A77 /* AppDelegate.swift in Sources */,
+				E56794642904F777006A1A77 /* PlanetVC.swift in Sources */,
 				E56794462904EF81006A1A77 /* SceneDelegate.swift in Sources */,
+				E567947B29050F9F006A1A77 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Star-Wars-Planets/Info.plist";
+				INFOPLIST_FILE = "Star-Wars-Planets/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,7 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Star-Wars-Planets/Info.plist";
+				INFOPLIST_FILE = "Star-Wars-Planets/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -406,6 +478,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E567945D2904F24D006A1A77 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E56794602904F2D6006A1A77 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E567945E2904F24D006A1A77 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E567945D2904F24D006A1A77 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E56794612904F2D6006A1A77 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E56794602904F2D6006A1A77 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E56794382904EF81006A1A77 /* Project object */;
 }
