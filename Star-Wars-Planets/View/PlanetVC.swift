@@ -16,7 +16,8 @@ class PlanetVC: UIViewController {
     let viewModel = PlanetViewModel()
     var planetList: [Planet] = [Planet]()
     var selectedPlanet: Planet!
-    
+    let progressHUD = ProgressHUD(text: "Loading...")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,9 @@ class PlanetVC: UIViewController {
     //MARK: - Custom methods
     func setupUI() {
         
+        view.addSubview(progressHUD)
+        progressHUD.hide()
+        
         //Setup navigation bar
         configureNavigationBar(largeTitleColor: .white, backgoundColor: .red, tintColor: .white, title: "Planets", preferredLargeTitle: true)
     
@@ -49,6 +53,8 @@ class PlanetVC: UIViewController {
     
     func getPlanets(url: String?) {
         
+        self.progressHUD.show()
+        
         //Load Planet List
         viewModel.loadPlanet(url: url) { [self] result in
             
@@ -56,18 +62,27 @@ class PlanetVC: UIViewController {
                 
             case .success(let list):
                 
-                list.forEach { planet in
-                    
-                    var planetDetail = planet
-                    planetDetail.image = Helper.getRandomImage()
-                    planetList.append(planetDetail)
-                }
+                self.progressHUD.hide()
                 
-                self.tblPlanet.reloadData()
+                DispatchQueue.main.async { [self] in
+                    
+                    list.forEach { planet in
+                        
+                        var planetDetail = planet
+                        planetDetail.image = Helper.getRandomImage()
+                        planetList.append(planetDetail)
+                    }
+                    
+                    self.tblPlanet.reloadData()
+                }
                 
             case .failure(let error):
                 
                 print("error \(error)")
+                
+                DispatchQueue.main.async {
+                    self.progressHUD.hide()
+                }
             }
             
         }

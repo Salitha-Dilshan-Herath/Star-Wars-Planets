@@ -9,7 +9,7 @@ import Foundation
 
 class PlanetViewModel {
     
-    public var isLoad = false
+    private var isLoad = false
     public var nextUrl: String?
     
     func loadPlanet(url: String?, completion: @escaping (Result<[Planet], APIErrors>)->Void) {

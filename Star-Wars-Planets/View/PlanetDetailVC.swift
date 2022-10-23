@@ -15,15 +15,17 @@ class PlanetDetailVC: UIViewController {
     @IBOutlet weak var lblOrbitPeriod: UILabel!
     @IBOutlet weak var lblGravity: UILabel!
     
-    //MARK: Instance Variable
+    //MARK: -  Instance Variable
     var planetDetail: Planet!
     
+    //MARK: -  Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
     }
 
+    //MARK: -  Custom Methods
     func setupUI() {
         
         imgPlanet.sd_imageIndicator = SDWebImageActivityIndicator.gray
@@ -36,6 +38,7 @@ class PlanetDetailVC: UIViewController {
             imgPlanet.sd_setImage(with: planet_url)
         }
         
+        //Show Planet details
         lblName.text = "Name: \(planetDetail.name)"
         lblOrbitPeriod.text = "Orbital Period: \(planetDetail.orbitalPeriod)"
         lblGravity.text = "Gravity: \(planetDetail.gravity)"
