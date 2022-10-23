@@ -38,11 +38,9 @@ extension PlanetVC: UITableViewDataSource, UITableViewDelegate {
             self.getPlanets(url: viewModel.nextUrl)
         }
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        let data = self.movieList[indexPath.row]
-//        self.selectedMovie = data
-//
-//        self.performSegue(withIdentifier: Constant.MOVIE_DETAIL_SEGUE, sender: nil)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        self.selectedPlanet = self.planetList[indexPath.row]
+        self.performSegue(withIdentifier: Constant.PLANET_DETAIL_SEGUE, sender: nil)
+    }
 }

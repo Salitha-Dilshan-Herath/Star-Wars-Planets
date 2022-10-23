@@ -27,6 +27,7 @@
 		E567947F290511E3006A1A77 /* PlanetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947D290511E3006A1A77 /* PlanetTVC.swift */; };
 		E5679480290511E3006A1A77 /* PlanetTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E567947E290511E3006A1A77 /* PlanetTVC.xib */; };
 		E56794832905165D006A1A77 /* PlanetVCTableConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794822905165D006A1A77 /* PlanetVCTableConfig.swift */; };
+		E5679487290521CE006A1A77 /* PlanetDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679486290521CE006A1A77 /* PlanetDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E567947D290511E3006A1A77 /* PlanetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTVC.swift; sourceTree = "<group>"; };
 		E567947E290511E3006A1A77 /* PlanetTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetTVC.xib; sourceTree = "<group>"; };
 		E56794822905165D006A1A77 /* PlanetVCTableConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetVCTableConfig.swift; sourceTree = "<group>"; };
+		E5679486290521CE006A1A77 /* PlanetDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				E56794632904F777006A1A77 /* PlanetVC.swift */,
 				E56794652904F9CA006A1A77 /* MainNavController.swift */,
+				E5679486290521CE006A1A77 /* PlanetDetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				E567947929050EAB006A1A77 /* Helper.swift in Sources */,
 				E56794832905165D006A1A77 /* PlanetVCTableConfig.swift in Sources */,
+				E5679487290521CE006A1A77 /* PlanetDetailVC.swift in Sources */,
 				E56794662904F9CB006A1A77 /* MainNavController.swift in Sources */,
 				E56794712904FEEA006A1A77 /* APIErrors.swift in Sources */,
 				E56794692904FB1A006A1A77 /* UIViewExtensions.swift in Sources */,

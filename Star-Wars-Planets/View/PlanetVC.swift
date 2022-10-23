@@ -9,12 +9,13 @@ import UIKit
 
 class PlanetVC: UIViewController {
     
-    //MARK: @IBOutlets
+    //MARK: - @IBOutlets
     @IBOutlet weak var tblPlanet: UITableView!
     
-    //MARK: Instance Variable
+    //MARK: - Instance Variable
     let viewModel = PlanetViewModel()
     var planetList: [Planet] = [Planet]()
+    var selectedPlanet: Planet!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,18 @@ class PlanetVC: UIViewController {
         setupUI()
     }
     
+    //pass data to the detail VC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-    //MARK: Custom methods
+        if let planetDetailsVC = segue.destination as? PlanetDetailVC{
+            
+            planetDetailsVC.planetDetail = self.selectedPlanet
+        }
+        
+    }
+    
+    
+    //MARK: - Custom methods
     func setupUI() {
         
         //Setup navigation bar

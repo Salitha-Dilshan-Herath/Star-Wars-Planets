@@ -23,7 +23,7 @@ class PlanetTVC: UITableViewCell {
 
     func setupCell(planet: Planet) {
         
-        //Show Poster image
+        //Show Planet image
         if let path = planet.image,  let planet_url = URL(string: path) {
             imgPlanet.sd_setImage(with: planet_url)
         }
