@@ -17,9 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ABk-GF-obL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ABk-GF-obL">
                                 <rect key="frame" x="0.0" y="143" width="390" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gJN-KA-339"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="43k-cn-Via"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -34,10 +38,30 @@
                     <navigationItem key="navigationItem" title="Planets" id="MnD-aO-dGI">
                         <barButtonItem key="backBarButtonItem" title="Back" id="waU-Hv-Vdt"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblPlanet" destination="ABk-GF-obL" id="YGw-Ul-cx5"/>
+                        <segue destination="LT5-jU-eAo" kind="show" id="IfJ-ZY-PUx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="-28.436018957345969"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kim-HL-Nne">
+            <objects>
+                <viewController id="LT5-jU-eAo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zUP-nN-TwC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dgI-B3-962"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uWv-xr-zKJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ih6-Jf-t9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="-28"/>
         </scene>
         <!--Main Nav Controller-->
         <scene sceneID="xKQ-Qi-zfN">

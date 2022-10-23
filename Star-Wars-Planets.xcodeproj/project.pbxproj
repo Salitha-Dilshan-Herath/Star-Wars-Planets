@@ -24,6 +24,9 @@
 		E5679477290508F6006A1A77 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5679476290508F6006A1A77 /* PlanetViewModel.swift */; };
 		E567947929050EAB006A1A77 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947829050EAB006A1A77 /* Helper.swift */; };
 		E567947B29050F9F006A1A77 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947A29050F9F006A1A77 /* Constant.swift */; };
+		E567947F290511E3006A1A77 /* PlanetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567947D290511E3006A1A77 /* PlanetTVC.swift */; };
+		E5679480290511E3006A1A77 /* PlanetTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E567947E290511E3006A1A77 /* PlanetTVC.xib */; };
+		E56794832905165D006A1A77 /* PlanetVCTableConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56794822905165D006A1A77 /* PlanetVCTableConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		E5679476290508F6006A1A77 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
 		E567947829050EAB006A1A77 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		E567947A29050F9F006A1A77 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E567947D290511E3006A1A77 /* PlanetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTVC.swift; sourceTree = "<group>"; };
+		E567947E290511E3006A1A77 /* PlanetTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetTVC.xib; sourceTree = "<group>"; };
+		E56794822905165D006A1A77 /* PlanetVCTableConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetVCTableConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		E56794572904F0E5006A1A77 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				E567947C29051193006A1A77 /* XIB */,
 				E567944E2904EF84006A1A77 /* LaunchScreen.storyboard */,
 				E56794492904EF81006A1A77 /* Main.storyboard */,
 			);
@@ -146,6 +153,7 @@
 		E56794672904FAE7006A1A77 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E5679481290515E4006A1A77 /* PlanetVC */,
 				E56794682904FB1A006A1A77 /* UIViewExtensions.swift */,
 				E567947829050EAB006A1A77 /* Helper.swift */,
 			);
@@ -168,6 +176,23 @@
 				E56794702904FEEA006A1A77 /* APIErrors.swift */,
 			);
 			path = ServicesHandler;
+			sourceTree = "<group>";
+		};
+		E567947C29051193006A1A77 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				E567947D290511E3006A1A77 /* PlanetTVC.swift */,
+				E567947E290511E3006A1A77 /* PlanetTVC.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		E5679481290515E4006A1A77 /* PlanetVC */ = {
+			isa = PBXGroup;
+			children = (
+				E56794822905165D006A1A77 /* PlanetVCTableConfig.swift */,
+			);
+			path = PlanetVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +264,7 @@
 				E56794502904EF84006A1A77 /* LaunchScreen.storyboard in Resources */,
 				E567944D2904EF84006A1A77 /* Assets.xcassets in Resources */,
 				E567944B2904EF81006A1A77 /* Main.storyboard in Resources */,
+				E5679480290511E3006A1A77 /* PlanetTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E567947929050EAB006A1A77 /* Helper.swift in Sources */,
+				E56794832905165D006A1A77 /* PlanetVCTableConfig.swift in Sources */,
 				E56794662904F9CB006A1A77 /* MainNavController.swift in Sources */,
 				E56794712904FEEA006A1A77 /* APIErrors.swift in Sources */,
 				E56794692904FB1A006A1A77 /* UIViewExtensions.swift in Sources */,
@@ -260,6 +287,7 @@
 				E56794442904EF81006A1A77 /* AppDelegate.swift in Sources */,
 				E56794642904F777006A1A77 /* PlanetVC.swift in Sources */,
 				E56794462904EF81006A1A77 /* SceneDelegate.swift in Sources */,
+				E567947F290511E3006A1A77 /* PlanetTVC.swift in Sources */,
 				E567947B29050F9F006A1A77 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
